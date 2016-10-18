@@ -5,7 +5,6 @@
     <classes>
       <class name="com.icscloud.tests.verifyLogin">
         <methods>
-          <include name="verifyLoginTitle"/>
           <include name="testValidLogin"/>
         </methods>
       </class> <!-- com.icscloud.tests.verifyLogin -->
