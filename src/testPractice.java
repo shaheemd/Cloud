@@ -13,7 +13,7 @@ public class testPractice {
 		driver.get(siteData.siteURL);
 		
 		//login
-		loginPage login = new loginPage(driver);
+		loginPage login = new loginPage(driver, "invenco");
 		login.logIntoPage();  
 
 		System.out.println(driver.getTitle());
