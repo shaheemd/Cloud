@@ -10,7 +10,7 @@ public class testPractice {
 		
 		//open the webpage
 		WebDriver driver = new FirefoxDriver();
-		driver.get(siteData.siteURL);
+		driver.get(siteData.demositeURL);
 		
 		//login
 		loginPage login = new loginPage(driver, "invenco");

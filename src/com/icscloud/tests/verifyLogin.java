@@ -19,46 +19,6 @@ import com.icscloud.pages.loginPage;
  *
  */
 public class verifyLogin {
-		
-	
-	@Test	//InvencoThick
-	public void testValidLogin() throws InterruptedException{		
-
-		//open the site
-		WebDriver driver = new FirefoxDriver();
-		driver.manage().window().maximize();      //maximise the window
-		driver.get(siteData.siteURL);
-		String site = "invenco";
-	
-		//login
-		loginPage login = new loginPage(driver, site);
-		login.logIntoPage();   // all data is retrieved from the siteData class;
-			
-		WebElement menu = driver.findElement(By.cssSelector("#user-settings-dropdown"));
-			
-		WebElement submenu = driver.findElement(By.xpath("//a[@data-ng-click='logout()']"));
-				
-		Actions action = new Actions(driver);
-				
-		action.click(menu).perform();
-				
-		//action.moveToElement(menu).perform();
-				
-		Thread.sleep(5000);
-						
-		//action.click(submenu).perform();
-				
-		//System.out.println(submenu.getText());
-				
-		SoftAssert logout = new SoftAssert();
-		logout.assertTrue(submenu.isDisplayed(), "failed");
-				
-				
-		//Assert.assertTrue(submenu.isDisplayed(), "failed");
-		 
-		driver.close();
-		
-	}
 	
 	@Test //DemoSite
 	public void testDemoValidLogin() throws InterruptedException{		

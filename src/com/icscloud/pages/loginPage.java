@@ -46,41 +46,44 @@ public class loginPage {
 	//Methods to use inserting username
 	public void typeUserName(){
 		
-		if(site == "invenco"){
+/*		if(site == "invenco"){
 			driver.findElement(tbUsername).sendKeys(siteData.username);
 		}
 		
 		else if (site == "demo"){
 			driver.findElement(demo_tbUsername).sendKeys(siteData.demo_username);
-		}
+		}*/
+		
+		driver.findElement(demo_tbUsername).sendKeys(siteData.demo_username);
 	}
 	
 	
 	//Methods to inserting password
 	public void typePassword(){
 		
-		if(site == "invenco"){
+/*		if(site == "invenco"){
 			driver.findElement(tbPassword).sendKeys(siteData.password);
 		}
 		
 		else if (site == "demo"){
 			driver.findElement(demo_tbPassword).sendKeys(siteData.demo_password);
-		}
+		}*/
 		
+		driver.findElement(demo_tbPassword).sendKeys(siteData.demo_password);
 	}
 	
 	
 	//Methods to use clicking the login button
 	public void ClickOnLoginButton(){
 		
-		if(site == "invenco"){
+/*		if(site == "invenco"){
 			driver.findElement(btnLogin).click();
 		}
 		else if (site == "demo"){
 			driver.findElement(demo_btnLogin).click();
-		}
+		}*/
 		
-		
+		driver.findElement(demo_btnLogin).click();
 		
 	}
 	
