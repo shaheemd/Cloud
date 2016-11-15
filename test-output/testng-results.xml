@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56929" started-at="2016-11-09T08:38:20Z" finished-at="2016-11-09T08:39:17Z">
+  <suite name="Default suite" duration-ms="58714" started-at="2016-11-15T08:29:57Z" finished-at="2016-11-15T08:30:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56929" started-at="2016-11-09T08:38:20Z" finished-at="2016-11-09T08:39:17Z">
+    <test name="Default test" duration-ms="58714" started-at="2016-11-15T08:29:57Z" finished-at="2016-11-15T08:30:55Z">
       <class name="com.icscloud.tests.verifyLogin">
-        <test-method status="PASS" signature="testDemoValidLogin()[pri:0, instance:com.icscloud.tests.verifyLogin@58651fd0]" name="testDemoValidLogin" duration-ms="24566" started-at="2016-11-09T21:38:20Z" finished-at="2016-11-09T21:38:45Z">
+        <test-method status="PASS" signature="testDemoValidLogin()[pri:0, instance:com.icscloud.tests.verifyLogin@58651fd0]" name="testDemoValidLogin" duration-ms="58673" started-at="2016-11-15T21:29:57Z" finished-at="2016-11-15T21:30:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDemoValidLogin -->
-        <test-method status="PASS" signature="testValidLogin()[pri:0, instance:com.icscloud.tests.verifyLogin@58651fd0]" name="testValidLogin" duration-ms="32312" started-at="2016-11-09T21:38:45Z" finished-at="2016-11-09T21:39:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testValidLogin -->
       </class> <!-- com.icscloud.tests.verifyLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
