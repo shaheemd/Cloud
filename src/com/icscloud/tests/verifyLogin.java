@@ -38,22 +38,13 @@ public class verifyLogin {
 		WebElement submenu = demo_driver.findElement(By.xpath(".//*[@id='wp-admin-bar-logout']/a"));
 				
 		Actions action = new Actions(demo_driver);
-				
-		//action.click(menu).perform();
-				
+
 		action.moveToElement(menu).perform();
 				
 		Thread.sleep(5000);
 						
-		//action.click(submenu).perform();
-				
-		//System.out.println(submenu.getText());
-				
 		SoftAssert logout = new SoftAssert();
 		logout.assertTrue(submenu.isDisplayed(), "failed");
-				
-				
-		//Assert.assertTrue(submenu.isDisplayed(), "failed");
 		
 		demo_driver.close();
 		
